@@ -105,9 +105,11 @@ class Segment implements Summarizable, StatsCalculator
 			}
 
 			if ($this->points[$i]->elevation !== null){
+				
 				if ($this->stats->minAltitude > $this->points[$i]->elevation) {
 					$this->stats->minAltitude = $this->points[$i]->elevation;
 				}
+				
 			}
 		}
 
